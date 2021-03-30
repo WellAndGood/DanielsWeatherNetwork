@@ -1,0 +1,92 @@
+
+
+
+h3 {
+    padding: 10px 0px 0px 10px;
+}
+
+p {
+    font-size: 130%;
+    text-indent: 20px;
+    line-height: 1;
+}
+
+input {
+    width: 90%;
+    text-align: center;
+}
+
+.btn {
+    display: block; 
+    width: 90%
+}
+
+.search-and-history {
+    border-top: 1px solid black;
+}
+
+.searchHistoryTitle {
+    padding: 5px;
+    text-align: center;
+}
+
+.search-history-div {
+    text-align: center;
+}
+
+.searchHistory {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.searchHistory:hover {
+    background-color: rgb(204, 204, 204);
+    transform: scale(1.01);
+    transition: 200ms;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.pTempInfo {
+    margin-left: 25px;
+    text-indent: 20px;
+}
+
+.pTempInfoBlock {
+    display: inline;
+    margin: 25px;
+    line-height: 1.5;
+}
+
+.weather-results {
+    border: 1px solid black;
+}
+
+#future-Container {
+    margin-top: 50px;
+}
+
+#future-weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.futureWeatherBox {
+    min-width: 25vh;
+    min-height: 25vh;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(84, 188, 236);
+}
+
+.futureWeatherBox:hover {
+    background-color: rgb(46, 142, 206);
+    transition: 200ms;
+}
+
+.searchHistory:first-letter {
+    text-transform:capitalize;
+}

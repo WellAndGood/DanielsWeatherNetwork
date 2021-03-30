@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg text-light navbar-light bg-dark justify-content-center">
+          <h1>Weather Dashboard</h1>
+        </nav>
+    </div>
+    <div class="d-flex min-vh-100">
+        <div class="col-lg-3 col-md-6 col-sm-12 search-history-container">
+            <div class="search-and-history p-3">
+                <label for="searchInput" class="p-2">
+                    <h3>Search for a city: </h3>
+                    <p>Ex: London, ON, CA</p>
+                </label>
+                <input type="text" id="searchInput" name="city" placeholder="Ex: Ottawa">
+                <button type="button" id="submitButton" class="btn btn-dark m-2">Search</button>
+            </div>
+            <div class="search-history-div">
+                <div class="searchHistoryTitle bg-dark text-white">Search History</div>
+                <div class="searchHistory" id="searchHistory1">Toronto</div>
+                <div class="searchHistory" id="searchHistory2">Montreal</div>
+                <div class="searchHistory" id="searchHistory3">Vancouver</div>
+                <div class="searchHistory" id="searchHistory4">New York City</div>
+                <div class="searchHistory" id="searchHistory5">Boston</div>
+                <div class="searchHistory" id="searchHistory6">Sudbury</div>
+                <div class="searchHistory" id="searchHistory7">Kingston</div>
+            </div>
+            </div>
+        <div class="col-lg-9 col-md-6 col-sm-12 weather-results">
+            <div id="current-weather-info">
+
+                <h2 id="city-name" style="display: inline-block" class="p-3">City Name</h2>
+                <h3 id="country-name" style="display: inline-block">Country Name</h3>
+                <h4 id="weather-date" style="display: inline-block" class="px-3">March 25, 2021</h4>
+
+                <p class="pTempInfo">
+                    <strong>Temperature: </strong>
+                    <span id="temperature-info"></span>
+                </p>
+                <p class="pTempInfoBlock">
+                    <span id="weather-blurb"></span>
+                </p>
+                <p class="pTempInfoBlock">
+                    <img id="weather-logo">
+                </p>
+                <p></p>
+                <p class="pTempInfo">
+                    <strong>Humidity: </strong>
+                    <span id="humidity-info"></span>
+                </p>
+                <p class="pTempInfo">
+                    <strong>Wind Speed: </strong>
+                    <span id="wind-speed"></span>
+                </p>
+                <p class="pTempInfo">
+                    <strong>UV Index: </strong>
+                    <span id="UV-index"></span>
+                </p>
+            </div>
+            <div id="future-Container">
+                <h3>5-Day Forecast: </h3>
+                <div id="future-weather-info">
+                    <div class="futureWeatherBox" id="weather-box-1">
+                    </div>
+                    <div class="futureWeatherBox" id="weather-box-2">
+                    </div>
+                    <div class="futureWeatherBox" id="weather-box-3">
+                    </div>
+                    <div class="futureWeatherBox" id="weather-box-4">
+                    </div>
+                    <div class="futureWeatherBox" id="weather-box-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div> 
+   </div>
+   <script type="text/javascript" src="./script.js" ></script>
+</body>
+</html>
