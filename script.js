@@ -16,7 +16,7 @@ var searchHistoryEl = document.getElementsByClassName("searchHistory")
 var searchHistoryDiv = document.getElementById("search-history-div")
 var errorMessage = document.getElementById("error-message")
 
-let searchHistory = localStorage.getItem("history").split(',');
+let searchHistory = localStorage.getItem("history").split(',') || []
 
 // Testing the Text Content of the DOM Traversal variables
 
