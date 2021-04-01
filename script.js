@@ -16,7 +16,17 @@ var searchHistoryEl = document.getElementsByClassName("searchHistory")
 var searchHistoryDiv = document.getElementById("search-history-div")
 var errorMessage = document.getElementById("error-message")
 
-let searchHistory = localStorage.getItem("history").split(',') || []
+let searchHistory = ["Montreal", "Vancouver", "Toronto"]
+console.log(searchHistory)
+
+if (localStorage.getItem("history") === null) {
+    console.log("It is null")
+    searchHistory = ["Montreal", "Vancouver", "Toronto"]
+} else {
+    console.log("It is not null")
+    searchHistory = localStorage.getItem("history").split(',')
+}
+console.log(searchHistory)
 
 // Testing the Text Content of the DOM Traversal variables
 
@@ -36,8 +46,8 @@ cityHistoryList = []
 
 function renderSearchHistory() {
     
-    var history = localStorage.getItem("history").split(',');
-    localStorage.setItem("history", history)
+    var history = searchHistory
+    localStorage.setItem("history", searchHistory)
     if (history !== null) {
         city = cityHistoryList[i]
     }
