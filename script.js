@@ -98,7 +98,7 @@ submitButton.addEventListener("click", function(){
 });
 
 function getCityWeather(citySearchString) {
-    const openWeatURLStart = "http://api.openweathermap.org/data/2.5/weather?q="
+    const openWeatURLStart = "https://api.openweathermap.org/data/2.5/weather?q="
     var APIKey = "&appid=d1b743fbcfca85dad360210556b54d8c"
     var requestUrl = openWeatURLStart + citySearchString + APIKey
 
@@ -199,7 +199,7 @@ function getCityWeather(citySearchString) {
 
 function get5Day(citySearchString) {
     futureWeatherInfo.textContent = ""
-    const fiveDayURLStart = "http://api.openweathermap.org/data/2.5/forecast?q="
+    const fiveDayURLStart = "https://api.openweathermap.org/data/2.5/forecast?q="
     var APIKey = "&appid=d1b743fbcfca85dad360210556b54d8c"
     var fiveDayRequestUrl = fiveDayURLStart + citySearchString + APIKey
     console.log("5-day Forecast URL: " + fiveDayRequestUrl)
