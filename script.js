@@ -77,7 +77,6 @@ for (var i = 0; i < searchHistoryEl.length; i++) {
         var targetClick = event.target.innerHTML
         getCityWeather(targetClick)
         get5Day(targetClick)
-
     }, false);
 }
 
