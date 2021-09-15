@@ -1,4 +1,4 @@
-# Weather Dashboard - Bootcamp Spot Homework #6
+# Weather Dashboard
 
 ## Overview
 
